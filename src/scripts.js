@@ -46,7 +46,6 @@ function fetchQuote() {
 	fetch('/fetchQuote')
 		.then(response => response.json())
 		.then(data => {
-			console.log(data)
 			const quote = data.quote
 			const author = data.author
 			translateActivity(quote)
@@ -73,7 +72,7 @@ function fetchQuote() {
 
 async function translateActivity(text) {
 	const targetLanguage = 'pt';
-	const apiKey = apiKey; // Replace with your Google Translate API key
+	const apiKey = 'YOU_API_KEY'; // Replace with your Google Translate API key
 
 	const translationResponse = await fetch(`https://translation.googleapis.com/language/translate/v2?key=${apiKey}`, {
 		method: 'POST',
