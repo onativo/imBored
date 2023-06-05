@@ -50,6 +50,6 @@ Feel free to modify the README.md file as needed to include additional details o
 ---
 
 <div align="center">
-  <img src="./src/img/homescreen.png">
+  <img src="../src/img/homescreen.png">
   <sub>Application homepage</sub>
 </div>
