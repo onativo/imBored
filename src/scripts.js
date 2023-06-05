@@ -1,3 +1,5 @@
+const apiKey = require('./config');
+
 function fetchActivity() {
 	fetch('/activity')
 		.then(response => response.json())
@@ -71,7 +73,7 @@ function fetchQuote() {
 
 async function translateActivity(text) {
 	const targetLanguage = 'pt';
-	const apiKey = 'AIzaSyBzp8QZcFZyfyDwj-6usYdrFkMRXGBuVVs'; // Replace with your Google Translate API key
+	const apiKey = apiKey; // Replace with your Google Translate API key
 
 	const translationResponse = await fetch(`https://translation.googleapis.com/language/translate/v2?key=${apiKey}`, {
 		method: 'POST',

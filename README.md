@@ -1,55 +1,58 @@
 # Random Quote Translator
 
-This is a simple web application that fetches the [Bored API](https://www.boredapi.com/) to return a random activity a person can practice/do in a moment of boredom.
+Este é website bem simples que realiza um request na [Bored API](https://www.boredapi.com/) para retornar uma atividade aleatória que uma pessoa pode praticar/fazer em um momento de tédio.
 
-Also, it fetches a random quote from the [ZenQuotes API](https://docs.zenquotes.io/zenquotes-documentation/) to bring you few seconds of reflection.
+Além disso, ele busca uma citação aleatória da [API ZenQuotes](https://docs.zenquotes.io/zenquotes-documentation/) e retorna a citação junto com seu autor para trazer alguns segundos de reflexão.
 
-As a feature, it translates both responses into Portuguese using the Google Translate API. The translated quote and activity are then displayed on the webpage.
+Como recurso extra, traduz as duas respostas para o português usando a API do Google Tradutor. A citação e a atividade traduzidas são exibidas na página inicial.
 
-## Prerequisites
+- **English version [here](/en-us/README.md).**
+
+## Pré-requisitos
 
 - Node.js (v12 or higher)
 - Google Translate API key
 
-## Getting Started
+## Iniciando o projeto
 
-1. Clone the repository:
+1. Clone este repositório:
 
 ```shell
-git clone <repository-url>
+git clone https://github.com/onativo/imBored.git
 ```
 
-2. Install the dependencies:
+2. Instale as dependências:
 
 ```shell
   cd random-quote-translator
   npm install
 ```
 
-3.Set up your Google Translate API key:
+3.Condifigure a sua API Key do Google Translate:
 
-Sign up for the Google Translate API and obtain an API key.
+Acesse sua conta do Google Translate API e salve sua chave.
 
-Replace the placeholder API key in the `translateActivity` function with your actual API key.
+Insira sua chave secreta no campo `apiKey` do arquivo `/src/scripts.js`.
+Você também pode criar um arquivo `config.js` e exportar a apiKey, importando-a novamente no `/src/scripts.js`
 
-4. Start the server:
+4. Inicie o servidor:
 
 ```shell
   node index.js
 ```
 
-5. Open your web browser and navigate to http://localhost:3000 to see the application in action.
+5. Abra seu navegador e acesse o link http://localhost:3000 para ver a aplicação rodando.
 
 ---
 
-## License
-This project is licensed under the MIT License.
+## Licença
+Este projeto está licenciado sob a licença MIT.
 
-Feel free to modify the README.md file as needed to include additional details or instructions specific to your project.
+Sinta-se à vontade para modificar o arquivo README.md conforme necessário para incluir detalhes adicionais ou instruções específicas para o seu projeto.
 
 ---
 
 <div align="center">
   <img src="./src/img/homescreen.png">
-  <sub>Application homepage</sub>
+  <sub>Página inicial da aplicação</sub>
 </div>
